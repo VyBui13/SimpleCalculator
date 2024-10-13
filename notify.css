@@ -119,6 +119,10 @@ html {
     background-color: var(--success-color)
 }
 
+.nofi--success .nofi__content .nofi__content__title {
+    color: var(--success-color);
+}
+
 /*----------------SUCCESS----------------*/
 
 /*----------------ERROR----------------*/
@@ -130,6 +134,10 @@ html {
     background-color: var(--error-color);
 }
 
+.nofi--error .nofi__content .nofi__content__title {
+    color: var(--error-color);
+}
+
 /*----------------ERROR----------------*/
 
 /*----------------WARNING----------------*/
@@ -139,6 +147,10 @@ html {
 
 .nofi--warning .nofi__icon {
     background-color: var(--warning-color);
+}
+
+.nofi--warning .nofi__content .nofi__content__title {
+    color: var(--warning-color);
 }
 
 /*----------------WARNING----------------*/

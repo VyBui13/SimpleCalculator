@@ -46,12 +46,14 @@ function checkValidNumber(numberInput) {
 function handleClicking() {
     const firstParameter = document.getElementById('firstParameter').value;
     const secondParameter = document.getElementById('secondParameter').value;
+    const result = document.getElementById('result');
+    result.value = '';
 
     if (firstParameter === '' && secondParameter === '') {
         nofi({
             type: 'error',
             msg: 'Both parameters are empty!'
-        });
+        });;
         return;
     }
 
@@ -112,18 +114,16 @@ function handleClicking() {
     }
 
     if (addition.checked) {
-        const result = Number(firstParameter) + Number(secondParameter);
-        document.getElementById('result').value = result;
+        const calculatedResult = Number(firstParameter) + Number(secondParameter);
+        result.value = calculatedResult;
 
     } else if (subtraction.checked) {
-        const result = Number(firstParameter) - Number(secondParameter);
-        document.getElementById('result').value = result;
+        const calculatedResult = Number(firstParameter) - Number(secondParameter);
+        result.value = calculatedResult;
 
     } else if (multiplication.checked) {
-        const result = Number(firstParameter) * Number(secondParameter);
-        document.getElementById('result').value = result;
-
-
+        const calculatedResult = Number(firstParameter) * Number(secondParameter);
+        result.value = calculatedResult;
     } else {
         if (Number(secondParameter) === 0) {
             nofi({
@@ -132,8 +132,8 @@ function handleClicking() {
             });
             return;
         }
-        const result = Number(firstParameter) / Number(secondParameter);
-        document.getElementById('result').value = result;
+        const calculatedResult = Number(firstParameter) / Number(secondParameter);
+        result.value = calculatedResult;
     }
 
     nofi({
