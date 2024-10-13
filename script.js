@@ -79,7 +79,7 @@ function handleClicking() {
     if (!validFirst && !validSecond) {
         nofi({
             type: 'warning',
-            msg: 'Both parameters are not valid numbers!'
+            msg: 'Both parameters aren\'t valid!'
         });
         return;
     }
@@ -87,7 +87,7 @@ function handleClicking() {
     if (!validFirst) {
         nofi({
             type: 'warning',
-            msg: 'First parameter is not a valid number!'
+            msg: 'First parameter isn\'t valid!'
         });
         return;
     }
@@ -95,7 +95,7 @@ function handleClicking() {
     if (!validSecond) {
         nofi({
             type: 'warning',
-            msg: 'Second parameter is not a valid number!'
+            msg: 'Second parameter isn\'t valid!'
         });
         return;
     }
@@ -128,7 +128,7 @@ function handleClicking() {
         if (Number(secondParameter) === 0) {
             nofi({
                 type: 'error',
-                msg: 'Division by zero is not allowed!'
+                msg: 'Division by zero isn\'t allowed!'
             });
             return;
         }
